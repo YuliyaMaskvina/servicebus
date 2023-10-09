@@ -1,0 +1,20 @@
+azure-service-bus-config:
+  enabled: true
+  credential:
+    client-id: 0004b885-1b9f-46ed-a378-51dfdb800ca0
+    tenant-id: 20aa4afa-3aec-4847-8402-cbc68e88824c
+    client-secret: py18Q~1px6f8V_kBps1IIkHyr4ORs.ZL5P_SscpT
+  retry-config-data:
+    maxAttempts: 3
+
+azure-service-bus-producer-config:
+    destinations:
+    - destination-name: TOPIC
+      destination-type: topic-temp-1
+      namespace-name: swissjm.servicebus.windows.net
+      enabled: true
+    - destination-name: TOPIC
+      destination-type: topic-temp-1
+      enabled: true
+      namespace-name: swissjm.servicebus.windows.net
+
